@@ -1,0 +1,45 @@
+.dark {
+  --primary-color: #111;
+  --secondary-color: #1d1d1d;
+  --tertiary-color: #000;
+}
+
+.light {
+  --primary-color: #fff;
+  --secondary-color: #c0bfbf;
+  --tertiary-color: #eceaea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
+
+.square {
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 2px var(--tertiary-color);
+  margin: 2px;
+  width: 16px;
+  height: 16px;
+  transition: all 1s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
